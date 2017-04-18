@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>个人简历的表格形式</title>
+</head>
+<body>
+	<table border="1">
+	<!-- <tr>定义行   <td>定义列 -->
+		<tr>
+		<!-- colspan 表示跨多少列 （合并列）   rowspan 表示跨多少行（合并行） -->
+			<td colspan="5">个人信息</td>
+		</tr>
+		
+		<tr>
+			<td rowspan="3"><input name="image" type="image" title="image"
+				src="../Images/photo.png"></td>
+			<td>姓名:</td>
+			<!-- 这里的value表示初始值  -->
+			<td><input name="姓名" type="text" value="张三" size="8" /></td>
+			<td>籍贯：</td>
+			<!-- 列表框的表现形式  -->
+			<!-- 注意size是显示的条目 不是 内容的多少 1表示显示一条内容        列表框的形式需要通过style进行调整 -->
+			<td><select name="籍贯" size="1" style="width: 120px;">
+					<option value="安徽" selected="selected">安徽</option>
+					<option value="河南" selected="selected">河南</option>
+					<option value="北京" selected="selected">北京</option>
+					<option value="上海" selected="selected">上海</option>
+					<option value="湖北" selected="selected">湖北</option>
+			</select></td>
+		</tr>
+		
+		<tr>
+			<td>性别:</td>
+		<!-- 单选按钮  tybe="radio" 这里注意判断单选的几种类型的name要一致   这里的name表示一组-->
+			<td><input name="性别" type="radio" title="boy"> <span>男</span>
+				<input name="性别" type="radio" title="girl"> <span>女</span></td>
+			<td>婚姻：</td>
+			<td><input name="婚姻" type="radio" title="true"> <span>已婚</span>
+				<input name="婚姻" type="radio" title="fales"> <span>未婚</span>
+			</td>
+		</tr>
+		
+		<tr>
+			<!-- 复选框  tybe="checkbox" 可以实现多选-->
+			<td colspan="5">兴趣爱好：
+			 <a><input name="hobby" type="checkbox"value="篮球">篮球</a>
+			 <a><input name="hobby" type="checkbox"value="游戏">游戏</a> 
+			 <a><input name="hobby" type="checkbox"value="动漫">动漫</a>
+			 <a><input name="hobby" type="checkbox"value="音乐">音乐</a>
+			</td>
+		</tr>
+		
+		<tr>
+		<!-- 文件域 -->
+		<td colspan="5">请点击添加个人的项目：
+		<input type="file" title="项目">
+		</td>
+		</tr>
+		
+		<tr>
+			<td colspan="5">
+			<!-- 多行文本框  通过关键词textarea实现-->
+			<!-- readonly 只能看不能够复写删除等 -->
+			<textarea rows="20" cols="70" readonly="readonly">个人经历：
+				新华社北京12月27日电（记者李亚红、王思北）针对日益严峻的网络安全形势，经中央网络安全和信息化领导小组批准，国家互联网信息办公室27日发布《国家网络空间安全战略》，提出捍卫网络空间主权、维护国家安全、保护关键信息基础设施、加强网络文化建设、打击网络恐怖和违法犯罪、完善网络治理体系、夯实网络安全基础、提升网络空间防护能力、强化网络空间国际合作等9项任务。
+				当前，我国网络空间安全面临严峻风险与挑战，包括关键信息基础设施遭受攻击破坏，严重危害国家经济安全和公共利益；网络谣言、淫秽、暴力、迷信等有害信息侵蚀文化安全和青少年身心健康；网络恐怖和违法犯罪大量存在，威胁人民生命财产安全，破坏社会秩序；围绕网络空间资源控制权、规则制定权的国际竞争日趋激烈，网络空间军备竞赛挑战世界和平等。
+				“网络空间正全面改变人们的生产生活方式，但安全问题不容忽视。”国家网信办副主任王秀军说，战略充分体现了习近平总书记网络强国战略思想，是指导国家网络安全工作的纲领性文件。战略提出，以总体国家安全观为指导，贯彻落实创新、协调、绿色、开放、共享的发展理念，增强风险意识和危机意识，统筹国内国际两个大局，统筹发展安全两件大事，积极防御、有效应对，推进网络空间和平、安全、开放、合作、有序，维护国家主权、安全、发展利益，实现建设网络强国的战略目标。
+				战略还提出，一个安全稳定繁荣的网络空间，对各国乃至世界都具有重大意义。中国愿与各国一道，坚持尊重维护网络空间主权、和平利用网络空间、依法治理网络空间、统筹网络安全与发展，加强沟通、扩大共识、深化合作，积极推进全球互联网治理体系变革，共同维护网络空间和平安全。
+				</textarea>
+				</td>
+		</tr>
+		<tr>
+		<td colspan="5">个人的获奖经历：
+		<!--有序排列 -->
+		<ol>
+		<li>获得的奖项一：(详细说明)</li>
+		<li>获得的奖项二：(详细说明)</li>
+		<li>获得的奖项三：(详细说明)</li>
+		<li>获得的奖项四：(详细说明)</li>
+		</ol>
+		</td>
+		</tr>
+		<tr>
+			<td colspan="5">
+			<textarea rows="10" cols="70">个人工作经历：
+				新华社北京12月27日电（记者李亚红、王思北）针对日益严峻的网络安全形势，经中央网络安全和信息化领导小组批准，国家互联网信息办公室27日发布《国家网络空间安全战略》，提出捍卫网络空间主权、维护国家安全、保护关键信息基础设施、加强网络文化建设、打击网络恐怖和违法犯罪、完善网络治理体系、夯实网络安全基础、提升网络空间防护能力、强化网络空间国际合作等9项任务。
+				当前，我国网络空间安全面临严峻风险重维护网络空间主权、和平利用网络空间、依法治理网络空间、统筹网络安全与发展，加强沟通、扩大共识、深化合作，积极推进全球互联网治理体系变革，共同维护网络空间和平安全。
+				</textarea>
+				</td>
+		</tr>
+		<tr >
+		<td colspan="3">邮箱：<input name="邮箱" type="text" /></td>
+		<td colspan="2">TEL：<input name="tel" type="text"  /></td>
+		</tr>
+
+	</table>
+</body>
+</html>
