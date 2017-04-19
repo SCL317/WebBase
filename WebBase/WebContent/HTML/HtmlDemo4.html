@@ -5,7 +5,8 @@
 <title>个人简历的表格形式</title>
 </head>
 <body>
-	<table border="1" width=1200px>
+
+	<table border="1" >
 	<!-- <tr>定义行   <td>定义列 -->
 		<tr>
 		<!-- colspan 表示跨多少列 （合并列）   rowspan 表示跨多少行（合并行） -->
@@ -13,9 +14,12 @@
 		</tr>
 		
 		<tr>
-			<td rowspan="3"><input name="image" type="image" title="image"
-				src="../Images/photo.png"></td>
-			<td>姓名:</td>
+			<td rowspan="3"><center>
+			<img alt="photo" src="../Images/photo.png"></center>
+<!-- 			<input name="image" type="image" title="image" -->
+<!-- 				src="../Images/photo.png"> -->
+				</td>
+			<td width="50px">姓名:</td>
 			<!-- 这里的value表示初始值  -->
 			<td><input name="姓名" type="text" value="张三" size="8" /></td>
 			<td>籍贯：</td>
@@ -90,10 +94,11 @@
 				</td>
 		</tr>
 		<tr >
-		<td colspan="3">邮箱：<input name="邮箱" type="text" /></td>
-		<td colspan="2">TEL：<input name="tel" type="text"  /></td>
+		<td colspan="3">邮箱：<input name="邮箱" type="email"/></td>
+		<td colspan="2">TEL：<input name="tel" type="tel"  /></td>
 		</tr>
 
 	</table>
+
 </body>
 </html>
