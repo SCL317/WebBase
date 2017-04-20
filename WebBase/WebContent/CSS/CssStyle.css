@@ -1,0 +1,12 @@
+@CHARSET "UTF-8";
+h1 {
+	color: green;
+	font-size: 50px;
+	font-family: 华文彩云;
+}
+
+p {
+	color: green;
+	font-size: 30px;
+	font-family: 方正姚体;
+}

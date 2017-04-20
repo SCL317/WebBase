@@ -1,0 +1,30 @@
+@CHARSET "UTF-8";
+
+.a3 {
+	color: yellow;
+	background: red;
+	font-size: 30px;
+	font-family: 华文行楷;
+}
+
+p.a4 {
+	color: white;
+	background: black;
+	font-size: 50px;
+	font-family: 华文彩云;
+}
+
+#i3 {
+	color: blue ;
+	background: white;
+	font-size: 50px;
+	font-family: 华文彩云;
+}
+
+div#i4 {
+	color: red ;
+	background: blue;
+	font-size: 30px;
+	font-family: 华文行楷;
+}
+
