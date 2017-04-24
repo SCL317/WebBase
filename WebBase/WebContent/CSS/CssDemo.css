@@ -1,0 +1,42 @@
+@CHARSET "UTF-8";
+
+h1 {
+	font-family: 华文行楷;
+	font-size: xx-large;
+	font-style: italic;
+	font-weight: lighter;
+}
+
+h2 {
+	font-family: serif;
+	font-size: medium;
+	font-style: oblique;
+	font-stretch: wider;
+}
+
+p {
+	font-family: 微软雅黑;
+	font-size: larger;
+	font-style: inherit;
+	font-variant: small-caps;
+}
+
+b {
+	font-size: 150%;
+}
+
+span {
+	text-transform: capitalize;
+	text-decoration: underline line-through overline;
+}
+
+div {
+	background: pink;
+	font: italic bold 12pt/14pt 隶书,s 宋体
+}
+
+b {
+	border-style: dotted;
+    border-color: red;
+    background: pink;
+}
