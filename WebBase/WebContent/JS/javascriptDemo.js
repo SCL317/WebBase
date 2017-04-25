@@ -12,4 +12,5 @@ function myInfo() {
 	for ( var index in array) {
 		console.info(index + "----" + array[index]);
 	}
+
 }
