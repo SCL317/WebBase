@@ -1,0 +1,22 @@
+@CHARSET "UTF-8";
+
+div {
+	position: absoluter;
+	left: 200;
+	top: 200;
+	width: 100pt;
+	height: 100pt;
+	visibility:inherit;
+	z-index:2 ;
+	background-color: red
+}
+span {
+	position: absoluter;
+	left: 200;
+	top: 200;
+	width: 100pt;
+	height: 100pt;
+	visibility:inherit;
+	z-index: 1;
+	background-color: green
+}

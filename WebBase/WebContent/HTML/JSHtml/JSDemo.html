@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>JavaScript基本功能演示</title>
+<script type="text/javascript">
+	function Test() {
+		var c;
+		//c=alert("welcome!"); //弹出一个窗口 一个按钮
+		//c=confirm("这里是演示confirm"); //两个按钮
+		c=prompt("how old are you?", "20!"); //默认的答案 两个按钮
+		alert(c);
+	}
+// 	function Test2(){
+// 		document.write("JavaScript的学习");
+// 	}
+</script>
+</head>
+<!-- <body onload="Test2()"> -->
+<body>
+	<input type="button" value="测试按钮" onclick="Test()">
+</body>
+</html>
