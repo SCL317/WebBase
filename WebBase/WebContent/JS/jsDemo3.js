@@ -41,7 +41,7 @@ function pastaDemo() {
     pasta.prototype.trim= function(str){
     	//return str.replace("(.)\\1+", "$1");不行
     	//return str.split(" +");不行
-    	return str.replace(/(^\s*)|(\s*$)/g, "");
+    	return str.replace(/(^\s*)|(\s*$)/g, "");//见最下面解释
     }
     console.info("pastaTest.color:" +pastaTest.color);
     var trimcolor = pastaTest.trim(pastaTest.color);
@@ -74,3 +74,23 @@ function Button1() {
 function name() {
 	
 }
+
+/*用正则表达式将前后空格用空字符串替代:replace(/(^\s*)|(\s*$)/g, "") 
+标签： 杂谈	分类： 混口饭吃
+^表示字符串必须以后面的规则开头, 在这里就是说字符串必须以\s*开头.
+
+\s 是空格的意思, * 表示有0个或多个
+
+\s* 就是有0个或多个空格
+
+(^\s*) 表示的就是以0个空格或者多个空格开头
+
+| 表示或的意思, 也就是满足| 左边的也成立, 满足 | 右面的也成立.
+
+\s*前面说过了
+
+$ 的意思是字符串必须以前面的规则结尾
+
+(\s*$) 的意思就是, 以0个空格或者多个空格结尾
+
+/.../g  是正则表达式的属性, 表示全文匹配, 而不是找到一个就停止.*/
