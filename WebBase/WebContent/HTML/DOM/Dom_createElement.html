@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>创建新的 HTML 元素 - createElement()</title>
+</head>
+<body>
+	<div id="div1">
+		<p id="p1">这是一个段落</p>
+		<p id="p2">这是另一个段落</p>
+	</div>
+	<script>
+		var pp = document.createElement("p")
+		var text = document.createTextNode("这是第添加的一个标签")
+		var element = document.getElementById("div1")
+		pp.appendChild(text)
+		element.appendChild(pp)
+	</script>
+
+</body>
+</html>

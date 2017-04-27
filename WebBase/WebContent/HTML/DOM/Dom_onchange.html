@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>onchange演示</title>
+	<script>
+		function onchangeTest() {
+			var t= document.getElementById("changTest");
+			t.value = t.value.toUpperCase();
+		}
+	</script>
+</head>
+<body>
+	这里输入小写的英语单词
+	<input type="text" id="changTest" onchange="onchangeTest()" />
+	<p>输入后鼠标移走就会改变相应的值</p>
+</body>
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>onclick</title>
+</head>
+<body>
+	<p>
+		点击按钮执行 <em>displayDate()</em> 函数。
+	</p>
+	​
+	<button id="myBtn">点我</button>
+	​
+	<script>
+		/* document.getElementById("myBtn").onclick = function() { // 单击的回调函数
+			displayDate(); // 回调函数中执行的代码
+		};//可行的 */
+
+		/* document.getElementById("myBtn").onclick = displayDate;
+		// 将 displayDate作为单击的回调函数//可行的 */
+
+		/* document.getElementById("myBtn").onclick = displayDate();
+		// 将 displayDate() 执行的结果 赋值给 onclick 回调。 也就是说 ，你加了括号，
+		//是把函数返回值赋值过去了，你不加括号 是把函数指针赋值过去了（此时函数并未调用） 不可行的*/
+
+		document.getElementById("myBtn").onclick = function() {
+			displayDate()
+		};
+		function displayDate() {
+			document.getElementById("demo").innerHTML = Date();
+		}
+
+		/* document.getElementById("myBtn").onclick = function displayDate() {
+			document.getElementById("demo").innerHTML = Date();
+		}//这种直接调用的也是可以的  */
+	</script>
+	​
+	<p id="demo"></p>
+	​
+
+</body>
+</html>

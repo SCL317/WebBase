@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>innerHTM - innerText</title>
+</head>
+<body>
+
+	<p id="intro">Hello World!</p>
+	<p id="intro2">
+		这个实例演示了 <span>getElementById</span> 方法!
+	</p>
+	<script>
+		x = document.getElementById("intro");
+		document.write("<p>段落的文本为: " + x.innerHTML + "</p>");
+		//innerHTML是可以包含标签的的
+		x = document.getElementById("intro2");
+		document.write("<p>段落通过x.innerHTM的L文本为: " + x.innerHTML + "</p>");
+		//innerText是纯文本的
+		x = document.getElementById("intro2");
+		document.write("<p>段落通过innerText的文本为: " + x.innerText + "</p>");
+	</script>
+</body>
+</html>

@@ -115,19 +115,48 @@ function withDemo() {
 	console.info("m= " + m + ", n=" + n);
 }
 
+function screenTest() {
+	if (screen.width <= 1440 || screen.colorDepth <= 24) {
+		var msg = "本网站最佳浏览模式为1400*900*256";
+		console.info(msg);
+	}
+}
+
+function navigatorTest() {
+	var len = navigator.plugins.length;
+	with (document) {
+		write("你的浏览器共支持 " + len + "种外挂插件：<BR>");
+		write("TABLE BORDER=0>");
+		write("<CAPTION>外挂插件清理</CAPTION>");
+		write("<TR><TH><TH>名称<TH>描述<TH>文件名");
+		for (var i = 0; i < len; i++)
+			write("<TR><TD>" + i + "<TD>" + navigator.plugins[i].name
+					+ "<TD>" + navigator.plugins[i].description
+					+ "<TD>" +navigator.plugins[i].filename)+"<br/>";
+	}
+}
+
+function cfm() {
+	if (confirm("确定关闭？")) {
+		// 关闭窗口这两种形式都可以
+		// window.close()
+		self.close();
+	} else {
+		return false;
+	}
+}
+
 /*
- * 用正则表达式将前后空格用空字符串替代:replace(/(^\s*)|(\s*$)/g, "") 标签： 杂谈 分类： 混口饭吃
+ * 用正则表达式将前后空格用空字符串替代:replace(/(^\s*)|(\s*$)/g, "")
  * ^表示字符串必须以后面的规则开头, 在这里就是说字符串必须以\s*开头.
  * 
  * \s 是空格的意思, * 表示有0个或多个
  * 
  * \s* 就是有0个或多个空格
  * 
- * (^\s*) 表示的就是以0个空格或者多个空格开头
- *  | 表示或的意思, 也就是满足| 左边的也成立, 满足 | 右面的也成立.
+ * (^\s*) 表示的就是以0个空格或者多个空格开头 | 表示或的意思, 也就是满足| 左边的也成立, 满足 | 右面的也成立.
  * 
- * \s*前面说过了
- *  $ 的意思是字符串必须以前面的规则结尾
+ * \s*前面说过了 $ 的意思是字符串必须以前面的规则结尾
  * 
  * (\s*$) 的意思就是, 以0个空格或者多个空格结尾
  * 
