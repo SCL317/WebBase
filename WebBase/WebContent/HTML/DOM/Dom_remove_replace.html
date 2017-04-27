@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>replaceChild 和 removeChild</title>
+</head>
+<body>
+	<div id="div1">
+		<p id="p1">这是一个段落</p>
+		<p id="p2">这是另一个段落</p>
+		<input type="button" value="removeChildTest按钮"onclick="removeChildTest()" /> 
+		<input type="button" value="replaceChildTest按钮" onclick="replaceChildTest()" />
+	</div>
+	<script>
+		function replaceChildTest() {
+			var parent = document.getElementById("div1")
+			var child = document.getElementById("p1")
+			var childEle = document.createElement("p")
+			var childNode = document.createTextNode("这是被替换的")
+			childEle.appendChild(childNode);
+			parent.replaceChild(childEle, child)
+		}
+		function removeChildTest() {
+			var parent = document.getElementById("div1")
+			var child = document.getElementById("p1")
+			parent.removeChild(child);
+		}
+	</script>
+
+</body>
+</html>
