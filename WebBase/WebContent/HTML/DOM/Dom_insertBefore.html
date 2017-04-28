@@ -14,11 +14,11 @@
 	<script>
 		function insertBeforeTest() {
 			var pp = document.createElement("p");
-			var text = dlocument.createTextNode("这是第添加的一个标签");
+			var text = document.createTextNode("这是第添加的一个标签");
 			pp.appendChild(text);
 			var element = document.getElementById("div1");
 			var child = document.getElementById("p1");
-			element.insertBefore(pp, child)k;
+			element.insertBefore(pp, child);
 		}
 	</script>
 </body>
