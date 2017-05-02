@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>测试jQuery相关用法</title>
+<script type="text/javascript" src="../JS/jquery-3.2.1.js"></script>
+<script type="text/javascript" src="../JS/jQueryTest.js"></script>
+</head>
+<body>
+	<ul>
+		<li>Apple</li>
+		<li>Tomato</li>
+		<li>Banana</li>
+		<li>Potato</li>
+		<li>Orange</li>
+		<li>AppleTest
+			<p>
+				<span>这里是测试has过滤的</span>
+			</p>
+		</li>
+	</ul>
+	<hr />
+	<form id="my_form">
+		<input type="text" /> <input type="radio" /> <input type="radio"
+			checked="checked" /> <input type="checkbox" /> <input
+			type="checkbox" checked="checked" />
+	</form>
+
+	<hr />
+	<select id="sel" multiple="multiple">
+		<option value="0">苹果</option>
+		<option value="1" selected="selected">桔子</option>
+		<option value="2">荔枝</option>
+		<option value="3" selected="selected">葡萄</option>
+		<option value="4">香蕉</option>
+
+	</select>
+	<hr />
+	<form id="my_form" action="foo.php" method="get"></form>
+	<hr />
+	<p id="htmltest">html测试专用</p> 
+	<p id="texttest">text测试专用</p> 
+	<p id="csstest">css测试专用</p> 
+	<p id="idc" class="c1">addClass测试专用</p> 
+	<p id="app" >append_prepend测试专用</p> 
+	<p id="ab" >after_before测试专用</p> 
+	<p style="display: none;">我是隐藏的</p>
+	<input type="text" id="int" value="文本框"/>
+	<p id="rw" >replaceWith测试专用</p> 
+	<p id="wrap_wrapInner">wrap_wrapInner测试专用</p>
+	<ol>
+		<li class="rem">Apple</li>
+		<li>Tomato</li>
+		<li>Banana</li>
+		<li class="rem">Potato</li>
+		<li>Orange</li>
+		<li>AppleTest</li>
+	</ol>
+	<p id="empty"><b><span style="color:red">empty测试专用</span></b></p>
+	<hr />
+	<input type="button" value="测试hidden按钮" onclick="hiddenTest()" />
+	<input type="button" value="测试visible按钮" onclick="visibleTest()" />
+	<input type="button" value="测试contains按钮" onclick="containsTest()" />
+	<input type="button" value="测试has按钮" onclick="hasTest()" />
+	<input id="aaa" type="text" class="sss" />
+	<input type="button" value="测试attribute按钮" onclick="attributeTest()" />
+	<input type="button" value="测试input按钮" onclick="inputTest()" />
+	<input type="button" value="测试selected按钮" onclick="selectedTest()" />
+	<input type="button" value="测试attr按钮" onclick="attrTest()" />
+	<input type="button" value="测试removeAttr按钮" onclick="removeAttrTest()" />
+	<input type="button" value="测试html按钮" onclick="htmlTest()" />
+	<input type="button" value="测试text按钮" onclick="textTest()" />
+	<input type="button" value="测试css按钮" onclick="cssTest()" />
+	<input type="button" value="测试add_remove_Class按钮" onclick="add_remove_ClassTest()" />
+	<input type="button" value="测试append按钮" onclick="appendTest()" />
+	<input type="button" value="测试perpend按钮" onclick="prependTest()" />
+	<input type="button" value="测试after_before按钮" onclick="after_beforeTest()" />
+	<input type="button" value="测试clone按钮" onclick="cloneTest()" />
+	<input type="button" value="测试replaceWith按钮" onclick="replaceWithTest()" />
+	<input type="button" value="测试wrap_wrapInner按钮" onclick="wrap_wrapInnerTest()" />
+	<input type="button" value="测试remove按钮" onclick="removeTest()" />
+	<input type="button" value="测试empty按钮" onclick="emptyTest()" />
+</body>
+</html>
