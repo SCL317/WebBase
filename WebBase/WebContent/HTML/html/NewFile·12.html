@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+<table>
+	<table border="1">
+		<!-- <tr>定义行   <td>定义列 -->
+		<tr>
+			<!-- colspan 表示跨多少列 （合并列）   rowspan 表示跨多少行（合并行） -->
+			  <td colspan="8" style="height: 40px; font-family: 宋体  ;font-size: 30px ;background-color: grey;">
+			  <center>个人信息</center> 
+			  </td> 
+		</tr>
+
+		<tr>
+			<td >姓&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;名:</td>
+			<!-- 这里的value表示初始值  -->
+			<td><input name="姓名" type="text"  size="8" /></td>
+			
+			<td >性&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;别:</td>
+			<td><input name="性别" type="text"  size="8" /></td>
+			
+			<td>籍&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;贯：</td>
+			<!-- 列表框的表现形式  -->
+			<!-- 注意size是显示的条目 不是 内容的多少 1表示显示一条内容        列表框的形式需要通过style进行调整 -->
+<!-- 			<td><select name="籍贯" size="1" style="width: 120px;"> -->
+<!-- 					<option value="安徽" selected="selected">安徽</option> -->
+<!-- 					<option value="河南" selected="selected">河南</option> -->
+<!-- 					<option value="北京" selected="selected">北京</option> -->
+<!-- 					<option value="上海" selected="selected">上海</option> -->
+<!-- 					<option value="湖北" selected="selected">湖北</option> -->
+<!-- 			</select></td> -->
+			<td><input name="籍贯" type="text"  size="8" /></td>
+			
+			<td rowspan="4" ><center>
+					<img alt="photo" src="../Images/photo.png ">
+				</center> 
+			</td>
+		</tr>
+
+</table>
+
+</body>
+</html>
